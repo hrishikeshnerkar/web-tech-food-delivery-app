@@ -5,10 +5,12 @@ import ExploreMenu from '../../components/ExploreMenu/ExploreMenu'
 
 
 const Home = () => {
+
+    const[category,setcategory]= useState("All")
     return (
         <div>
             <Header />
-            <ExploreMenu />
+            <ExploreMenu category={category} setcategory={setcategory} />
         </div>
     )
 }
